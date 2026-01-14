@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { DayOfWeek } from '../types/schedule';
 import type { Workout } from '../types/workout';
-import { getAllWorkouts } from '../services/db';
-import { getScheduleForDay, addWorkoutToDay, removeWorkoutFromDay, getOrCreateScheduleForDay } from '../services/db';
+import { getAllWorkouts, addWorkoutToDay, removeWorkoutFromDay, getOrCreateScheduleForDay } from '../services/db';
 
 const DAYS: { key: DayOfWeek; label: string }[] = [
   { key: 'monday', label: 'Monday' },
